@@ -28,8 +28,10 @@ let number_computer = randomNumberComputer();
 
 let somma = number + number_computer;
 
+let check = pariDispari(somma);
+
 // controllo la stringa inserita dall'utente con quella che ritorna dalla funzione
-if(pariDispari(somma) == pari_dispari_user){
+if(check == pari_dispari_user){
     console.log(`La somma dei numeri è ${pariDispari(somma)}. Hai vinto!`);
 }
 else{
