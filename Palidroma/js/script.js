@@ -9,11 +9,11 @@ function palindromeWord(word){
     //Trasformo l'array di lettere in una stringa con la proprietà .join
     let join_word = reverse_word.join("");
 
-    return join_word;
+    return join_word.toLowerCase();
 }
 
 //Chiedere all'utente di inserire una parola ed inserirla in una variabile
-let parola = prompt('Inserisci una parola');
+let parola = prompt('Inserisci una parola').toLowerCase();
 
 //Confronto la stringa inserita dall'utente con quella che ritorna dalla funzione
 if(parola == palindromeWord(parola)){
